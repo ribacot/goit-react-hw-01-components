@@ -1,4 +1,4 @@
-/* @import '../node_modules/normalize/index.styl' ; */
+/* @import '../assets/normalize' ; */
 /* bring in normalize.css styles */
 
 body {
@@ -13,4 +13,8 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul{
+  list-style: none;
 }

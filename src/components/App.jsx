@@ -23,7 +23,8 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-      <Section titel="Upload stats">
+      <Section titel="Upload stats" classN="section-statistics">
+        <Statistics data={data} />
         <Statistics data={data} />
       </Section>
       <Section>

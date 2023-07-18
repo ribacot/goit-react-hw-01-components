@@ -1,8 +1,8 @@
 
 
-export function Section({ titel,children }) {
+export function Section({ titel,classN,children }) {
     return(
-      <section>
+      <section className={classN}>
             {titel && <h2>{titel}</h2>}
             {children}
     </section>)
