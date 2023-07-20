@@ -1,0 +1,11 @@
+/* :root{
+    --bgStatusColor:
+} */
+.status{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(62, 59, 58) ;
+    border-radius: 50%;
+
+}
