@@ -1,4 +1,4 @@
-export function Profile({ username, avatar, tag, location, stats }) {
+export default function Profile({ username, avatar, tag, location, stats }) {
   return (
     <div className="profile">
       <div className="description">

@@ -1,10 +1,14 @@
-import { Profile } from '../profile/Profile';
-import { Section } from '../section/Section';
 import user from '../../user.json';
-import { Statistics } from '../statistics/Statistics-list';
 import data from '../../data.json';
+import friends from '../../friends.json';
 
-export const App = () => {
+import Profile from '../profile/Profile';
+import Section from '../section/Section';
+import StatisticsItems from '../statistics/Statistics-items';
+import List from 'components/list/List';
+import FriendListItem from 'components/friendListItem/FriendListItem';
+
+export  const App = () => {
   return (
     <div
       style={{
@@ -26,10 +30,19 @@ export const App = () => {
         />
       </Section>
       <Section title="Upload stats" sectionClass="section-statistics">
-        <Statistics data={data} />
+        <List classList="list-statistics">
+          <StatisticsItems data={data} />
+        </List>
       </Section>
-      <Section>
-        <Statistics data={data} />
+      <Section sectionClass="section-statistics">
+        <List classList="statistics-list">
+          <StatisticsItems data={data} />
+        </List>
+      </Section>
+      <Section title="Frend List" sectionClass="section-friends">
+        <List classList="friend-list">
+          <FriendListItem data={friends} />
+        </List>
       </Section>
     </div>
   );
