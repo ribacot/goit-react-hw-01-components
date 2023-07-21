@@ -1,4 +1,4 @@
-import './style.css';
+import './FriendListItem.module.css';
 export default function FriendListItem({ data }) {
   return data.length
     ? data.map(({ avatar, name, isOnline, id }) => {
