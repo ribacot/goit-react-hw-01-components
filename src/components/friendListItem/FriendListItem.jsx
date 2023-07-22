@@ -1,13 +1,14 @@
-import './FriendListItem.module.css';
+import css from './FriendListItem.module.css';
+
 export default function FriendListItem({ data }) {
   return data.length
     ? data.map(({ avatar, name, isOnline, id }) => {
         let statusColor = null;
         isOnline ? (statusColor = 'green') : (statusColor = 'red');
         return (
-          <li key={id} className="item">
+          <li key={id} className={css.item}>
             <span
-              className="status"
+              className={css.status}
               style={{ backgroundColor: statusColor }}
             ></span>
             <img className="avatar" src={avatar} alt="User avatar" width="48" />

@@ -1,10 +1,12 @@
+import css from './Statistics-items.module.css'
+
 export default function StatisticsItems({ data }) {
-  return data.map(({ id, label, percentage }) => {
+  return <ul className={css.list}>{ data.map(({ id, label, percentage }) => {
     return (
-      <li key={id} className="item">
+      <li key={id} className={css.item}>
         <span className="label">{label}: </span>
         <span className="percentage">{percentage}%</span>
       </li>
     );
-  });
+  })}</ul>
 }

@@ -1,6 +1,6 @@
-export default function TransactionTable({ classTable, children }) {
+export default function TransactionTable({  children }) {
   return (
-    <table className={classTable}>
+    <table className="">
       <thead>
         <tr>
           <th>Type</th>

@@ -11,29 +11,11 @@ import FriendListItem from 'components/friendListItem/FriendListItem';
 import TransactionTable from 'components/transaction-table/TransactionTable';
 import TransactoinTableItems from 'components/transaction-table-items/TransactoinTableItems';
 
-import {  friendCss,
-  listCss,
-  profileCss,
-  sectionCss,
-  statlistItemsCss,
-  transTableCss,
-  transTableItemsCss,
-} from './App_import_css'
-
 // console.log(sectionCss)
 export const App = () => {
   return (
-    <div
-      // style={{
-      //   display: 'flex',
-      //   justifyContent: 'center',
-      //   flexDirection: 'column',
-      //   alignItems: 'center',
-      //   fontSize: 25,
-      //   color: '#010101',
-      // }}
-    >
-      <Section title="User card" sectionClass={sectionCss.section} >
+    <>
+      <Section title="User card">
         <Profile
           username={user.username}
           tag={user.tag}
@@ -42,26 +24,24 @@ export const App = () => {
           stats={user.stats}
         />
       </Section>
-      <Section title="Upload stats" sectionClass="section-statistics">
-        <List classList="list-statistics">
+      <Section title="Upload stats">
+        <StatisticsItems data={data} />
+      </Section>
+      <Section>
+        <List>
           <StatisticsItems data={data} />
         </List>
       </Section>
-      <Section sectionClass="section-statistics">
-        <List classList="statistics-list">
-          <StatisticsItems data={data} />
-        </List>
-      </Section>
-      <Section title="Frend List" sectionClass="section-friends">
-        <List classList="friend-list">
+      <Section title="Friend list">
+        <List>
           <FriendListItem data={friends} />
         </List>
       </Section>
-      <Section title="Transaction-history" sectionClass="section-transaction">
-        <TransactionTable classTable="transaction-history">
+      <Section title="Transaction-history">
+        <TransactionTable>
           <TransactoinTableItems items={transactions} />
         </TransactionTable>
       </Section>
-    </div>
+    </>
   );
 };
