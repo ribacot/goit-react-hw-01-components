@@ -24,13 +24,11 @@ export const App = () => {
           stats={user.stats}
         />
       </Section>
-      <Section title="Upload stats">
+      <Section title="Upload stats" sectionClass="upload">
         <StatisticsItems data={data} />
       </Section>
-      <Section>
-        <List>
-          <StatisticsItems data={data} />
-        </List>
+      <Section sectionClass="upload">
+        <StatisticsItems data={data} />
       </Section>
       <Section title="Friend list">
         <List>

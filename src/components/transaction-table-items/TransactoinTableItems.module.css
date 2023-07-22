@@ -1,12 +1,12 @@
 td {
-    padding:18px 28px 18px; 
-    text-align:center; 
-    border-right:1px solid #968b8b;
+  padding: 18px 28px 18px;
+  text-align: center;
+  border-right: 1px solid #968b8b;
 }
 
-td.last {
-    border-right:none;
+td:last-child {
+  border-right: none;
 }
-.grey{
-    background-color: rgb(195, 189, 189);
+.grey {
+  background-color: rgb(195, 189, 189);
 }

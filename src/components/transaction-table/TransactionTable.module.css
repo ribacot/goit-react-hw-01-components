@@ -16,6 +16,6 @@
 
   border-right: 1px solid white;
 }
-.table th.last {
+.table th:last-child {
   border-right: none;
 }

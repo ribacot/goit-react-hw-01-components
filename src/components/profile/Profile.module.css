@@ -27,6 +27,7 @@
 .stats_list {
   display: flex;
   justify-content: center;
+  border-top: 1px solid black;
 }
 
 .stats_list_items {
@@ -36,7 +37,10 @@
   flex-basis: calc(100% / 3);
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid black;
-
+  border-right: 1px solid black;
   background-color: antiquewhite;
+}
+
+.stats_list_items:last-child {
+  border-right: none;
 }

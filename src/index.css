@@ -1,4 +1,4 @@
- @import-normalize;
+@import-normalize;
 
 body {
   margin: 0;
@@ -46,7 +46,6 @@ img {
   max-width: 100%;
   height: auto;
 }
-/* Скиданні обведення у input */
 input,
 textarea {
   outline: none;
