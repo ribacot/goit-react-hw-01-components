@@ -7,10 +7,7 @@ export default function FriendListItem({ data }) {
         isOnline ? (statusColor = 'green') : (statusColor = 'red');
         return (
           <li key={id} className={css.item}>
-            <span
-              className={css.status}
-              style={{ backgroundColor: statusColor }}
-            ></span>
+            <span className={isOnline ? css.green : css.red}></span>
             <img className="avatar" src={avatar} alt="User avatar" width="48" />
             <p className="name">{name}</p>
           </li>

@@ -1,11 +1,13 @@
-export default function TransactionTable({  children }) {
+import css from './TransactionTable.module.css';
+
+export default function TransactionTable({ children }) {
   return (
-    <table className="">
+    <table cellspacing="0" className={css.table}>
       <thead>
         <tr>
           <th>Type</th>
           <th>Amount</th>
-          <th>Currency</th>
+          <th className={css.last}>Currency</th>
         </tr>
       </thead>
       <tbody>{children}</tbody>

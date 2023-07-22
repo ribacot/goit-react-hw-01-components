@@ -1,0 +1,21 @@
+.table {
+  overflow: hidden;
+  border: 1px solid #d3d3d3;
+  width: 80%;
+  margin: 5% auto 0;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+.table th {
+  padding: 18px 28px 18px;
+  text-align: center;
+  padding-top: 22px;
+  text-shadow: 1px 1px 1px #070707;
+  color: white;
+  background: #38b8a0;
+
+  border-right: 1px solid white;
+}
+.table th.last {
+  border-right: none;
+}

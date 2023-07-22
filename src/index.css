@@ -1,3 +1,4 @@
+ @import-normalize;
 
 body {
   margin: 0;
@@ -46,16 +47,18 @@ img {
   height: auto;
 }
 /* Скиданні обведення у input */
-input,textarea{
+input,
+textarea {
   outline: none;
 }
 
-section{
+section {
   padding-top: 80px;
-  border-block-start: 80px;
+
+  padding-bottom: 80px;
 }
 
-h2{
+h2 {
   margin-bottom: 20px;
   text-align: center;
 }

@@ -1,24 +1,27 @@
-/* :root{
-    --bgStatusColor:
-} */
 
-
-.status{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    border: 1px solid rgb(62, 59, 58) ;
-    border-radius: 50%;
-
+.status {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgb(62, 59, 58);
+  border-radius: 50%;
 }
 
-.item{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    padding: 5px;
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: antiquewhite;
-
+.item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: antiquewhite;
 }
+.red {
+  composes: item;
+  background-color: red;
+}
+.green {
+  composes: item;
+  background-color: green;
+}
+/* className={isOnline ? css.green : css.red} */
