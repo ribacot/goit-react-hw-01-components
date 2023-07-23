@@ -1,13 +1,12 @@
-td {
+.histori_tr > td {
   padding: 18px 28px 18px;
   text-align: center;
   border-right: 1px solid #968b8b;
 }
+tr:nth-child(2n) {
+  background-color: rgb(195, 189, 189);
+}
 
 td:last-child {
   border-right: none;
-}
-tr:nth-child(2n){
-    background-color: rgb(195, 189, 189);
-
 }
