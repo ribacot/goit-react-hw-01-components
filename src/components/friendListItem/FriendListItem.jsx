@@ -6,8 +6,8 @@ export default function FriendListItem({ data }) {
     ? data.map(({ avatar, name, isOnline, id }) => {
         return (
           <li key={id} className={css.item}>
-            <span className={isOnline ? css.green : css.red}></span>
-            <img className="avatar" src={avatar} alt="User avatar" width="48" />
+            <span className={`${css.status} ${isOnline ? css.green : css.red}`}></span>
+            <img className="avatar" src={avatar} alt="User avatar" width="60" />
             <p className="name">{name}</p>
           </li>
         );
