@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import css from './TransactoinTableItems.module.css';
 
 export default function TransactoinTableItems({ items }) {
-  return items.map(({ id, type, amount, currency }, index) => {
+  return items.map(({ id, type, amount, currency }) => {
     return (
       <tr key={id} >
         <td>{type}</td>
