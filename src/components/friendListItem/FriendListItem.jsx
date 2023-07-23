@@ -12,7 +12,7 @@ export default function FriendListItem({ data }) {
           </li>
         );
       })
-    : 'No Frends';
+    : 'No Friends';
 }
 
 FriendListItem.propTypes = {
