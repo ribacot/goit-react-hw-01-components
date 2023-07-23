@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './TransactionTable.module.css';
 
 export default function TransactionTable({ children }) {
@@ -13,4 +14,8 @@ export default function TransactionTable({ children }) {
       <tbody>{children}</tbody>
     </table>
   );
+}
+
+TransactionTable.propTypes = {
+  children:PropTypes.node
 }

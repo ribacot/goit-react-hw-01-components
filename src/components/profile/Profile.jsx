@@ -1,4 +1,6 @@
+import PropTypes from 'prop-types';
 import css from './Profile.module.css';
+
 export default function Profile({ username, avatar, tag, location, stats }) {
   return (
     <div className={css.container}>
@@ -25,3 +27,12 @@ export default function Profile({ username, avatar, tag, location, stats }) {
     </div>
   );
 }
+
+
+Profile.prototype = {
+  username: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
+};

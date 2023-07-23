@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './TransactoinTableItems.module.css';
 
 export default function TransactoinTableItems({ items }) {
@@ -11,3 +12,9 @@ export default function TransactoinTableItems({ items }) {
     );
   });
 }
+
+TransactoinTableItems.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.objectOf(PropTypes.string)
+  ).isRequired,
+};

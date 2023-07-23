@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Statistics-items.module.css';
 import randomColor from '../functions/randomColor';
 
@@ -20,3 +21,13 @@ export default function StatisticsItems({ data }) {
     </ul>
   );
 }
+
+StatisticsItems.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    })
+  ),
+};
